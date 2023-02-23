@@ -16,6 +16,13 @@ body{
     color:var(--white);
     font-family: 'Montserrat', sans-serif;
 }
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 200,
+        'opsz' 48
+}
 /*
 Menu
 */
@@ -62,4 +69,40 @@ Menu
 .active:hover {
   
     border-bottom: solid 2px #d9d9d9;
+}
+
+
+
+
+/*content*/
+.content{
+    padding: 150px 77px;
+}
+.content--main{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.main--text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main--text > h1{
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+.main--action > p {
+    font-size: 24px;
+    line-height: 29px;
+}
+/* action section */
+
+.main--action{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    gap:14px;
+    align-items: center;
 }
