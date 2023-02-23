@@ -39,6 +39,7 @@ Menu
 }
 
 .brand--menu {
+    display: block;
     font-family: 'Crimson Pro', serif;
     font-weight: 200;
     font-size: 14px;
@@ -92,6 +93,8 @@ Menu
 }
 
 .content--main {
+    display: block;
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -213,17 +216,21 @@ Menu
     text-align: center;
     color: #A9A9A9;
 }
+.hide{
+    visibility: hidden;
+}
 
 /*mobile*/
 
 @media screen and (max-width: 500px) {
     .menu {
         padding: 1em;
+        align-items: center;
     }
 
     .menu--desplegable {
         position: absolute;
-        background-color: #000;
+        background-color:var(--black-primary);
         /* #8c1aff;*/
         top: 55px;
         right: 0;
@@ -275,6 +282,7 @@ Menu
 
     .content {
         padding: 1em;
+        height: 90vh;
     }
 
     .content--main {
@@ -346,7 +354,7 @@ Menu
     }
 
     .footer {
-        display: none;
+        
         position:static;
         bottom: 0;
         font-weight: 500;

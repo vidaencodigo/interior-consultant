@@ -97,11 +97,13 @@
     </footer>
     <script>
         let icono = document.querySelector(".icono--menu--plegable");
-        function desplegar_menu(){
+        function desplegar_menu() {
             let menuDesplegable = document.querySelector(".menu--desplegable");
-            menuDesplegable.classList.toggle("desplegar--menu")
+            let brand = document.querySelector(".brand--menu");
+            menuDesplegable.classList.toggle("desplegar--menu");
+            brand.classList.toggle("hide");
         }
-        icono.addEventListener("click", desplegar_menu );
+        icono.addEventListener("click", desplegar_menu);
     </script>
 </body>
 
