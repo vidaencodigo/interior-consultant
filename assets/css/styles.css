@@ -11,11 +11,12 @@
     --white: #fff;
 }
 
-body{
+body {
     background-color: var(--black-primary);
-    color:var(--white);
+    color: var(--white);
     font-family: 'Montserrat', sans-serif;
 }
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -23,6 +24,7 @@ body{
         'GRAD' 200,
         'opsz' 48
 }
+
 /*
 Menu
 */
@@ -37,37 +39,46 @@ Menu
 
 .brand--menu {
     font-family: 'Crimson Pro', serif;
-    font-weight:200;
+    font-weight: 200;
     font-size: 14px;
+    text-transform: uppercase;
+    line-height: 16px;
 }
-.brand--menu > span{
+
+.brand--menu>span {
     display: block;
     padding: 8px;
     border: solid 1px;
     border-color: var(--white);
 }
-.menu--desplegable{
+
+.menu--desplegable {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
-.list--nav{
+
+.list--nav {
     font-weight: 500;
     font-size: 18px;
     padding: 8px;
 }
-.link--menu{
-    color:var(--white):
+
+.link--menu {
+    color: var(--white);
 }
+
 .link--menu:hover {
     color: #d9d9d9;
 }
+
 .active {
     font-weight: 700;
     border-bottom: solid 2px var(--white);
 }
+
 .active:hover {
-  
+
     border-bottom: solid 2px #d9d9d9;
 }
 
@@ -75,34 +86,53 @@ Menu
 
 
 /*content*/
-.content{
+.content {
     padding: 150px 77px;
 }
-.content--main{
+
+.content--main {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
 }
-.main--text{
+
+.main--text {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: center;
 }
-.main--text > h1{
+
+.main--text>h1 {
     font-family: 'Lora', serif;
     font-size: 48px;
     font-weight: 500;
 }
-.main--action > p {
+
+.main--text>p {
     font-size: 24px;
     line-height: 29px;
+    width: 410px;
+    font-weight: normal;
 }
+
 /* action section */
 
-.main--action{
+.main--action {
     margin-top: 8px;
     display: flex;
     flex-direction: row;
-    gap:14px;
+    gap: 14px;
     align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+}
+
+/*img*/
+.main--img {
+    width: 821.11px;
+    height: 586.53px;
 }
