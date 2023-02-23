@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-  
+
 </head>
 
 <body>
@@ -21,6 +21,11 @@
             </span>
         </div>
         <div class="menu--content">
+            <div class="icono--menu--plegable">
+                <div class="desplegable--linea linea--1"></div>
+                <div class="desplegable--linea linea--2"></div>
+                <div class="desplegable--linea linea--3"></div>
+            </div>
             <ul class="menu--desplegable">
                 <li class="list--nav active">
                     <a href="#" class="link--menu">Home</a>
@@ -56,27 +61,30 @@
                 </a>
             </section>
             <section class="main--illustration">
-                <div>
-                    <img src="./assets/images/photo1.png" alt="mian photo" class="main--img">
-                </div>
-                <article class="card">
-                    <div class="card--content">
-                        <section class="card--profile">
-                            <div class="image--profile">
-                                <img src="./assets/images/photo2.png" class="profile--image" alt="profile">
-                            </div>
-                            <div class="info--profile">
-                                <p>Aliza Webber</p>
-                                <p>Interior designer</p>
-                            </div>
-                        </section>
-                        <section class="card--text">
-                            <p>
-                                Designed in 2020 by Aliza Webber
-                            </p>
-                        </section>
+                <div class="content--main">
+
+                    <div>
+                        <img src="./assets/images/photo1.png" alt="mian photo" class="main--img">
                     </div>
-                </article>
+                    <article class="card">
+                        <div class="card--content">
+                            <section class="card--profile">
+                                <div class="image--profile">
+                                    <img src="./assets/images/photo2.png" class="profile--image" alt="profile">
+                                </div>
+                                <div class="info--profile">
+                                    <p>Aliza Webber</p>
+                                    <p>Interior designer</p>
+                                </div>
+                            </section>
+                            <section class="card--text">
+                                <p>
+                                    Designed in 2020 by Aliza Webber
+                                </p>
+                            </section>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
     </div>
@@ -87,6 +95,14 @@
             </p>
         </div>
     </footer>
+    <script>
+        let icono = document.querySelector(".icono--menu--plegable");
+        function desplegar_menu(){
+            let menuDesplegable = document.querySelector(".menu--desplegable");
+            menuDesplegable.classList.toggle("desplegar--menu")
+        }
+        icono.addEventListener("click", desplegar_menu );
+    </script>
 </body>
 
 </html>

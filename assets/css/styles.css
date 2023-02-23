@@ -132,7 +132,8 @@ Menu
     color: var(--white);
 }
 
-.main--illustration {
+
+.content--main {
     position: relative;
 }
 
@@ -211,4 +212,145 @@ Menu
     line-height: 17px;
     text-align: center;
     color: #A9A9A9;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 500px) {
+    .menu {
+        padding: 1em;
+    }
+
+    .menu--desplegable {
+        position: absolute;
+        background-color: #000;
+        /* #8c1aff;*/
+        top: 55px;
+        right: 0;
+        left: 0;
+        height: 0px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all .7s ease-in-out 0s;
+        border-radius: 0 0 15px 15px;
+        z-index: 1;
+    }
+
+    .desplegar--menu {
+        padding: 1em;
+        height: 100vh;
+    }
+
+    .icono--menu--plegable {
+        cursor: pointer;
+        position: relative;
+        width: 49px;
+        height: 49px;
+
+        padding: 12px 8px;
+        border-radius: 5px;
+    }
+
+    .desplegable--linea {
+        position: absolute;
+        width: 34px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .linea--1 {
+        top: 16px;
+    }
+
+    .linea--2 {
+        top: 23px;
+    }
+
+    .linea--3 {
+        bottom: 15px;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    .content--main {
+        flex-direction: column;
+        gap: 25px;
+        position: relative;
+        
+    }
+
+    .main--text {
+        gap: 25px;
+    }
+
+    .main--text>h1 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .main--text>p {
+        font-size: 14px;
+        line-height: 17px;
+        width: 100%;
+        font-weight: normal;
+    }
+
+    .main--action {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .main--img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 300px;
+        height: 138px;
+        right: 10px;
+    }
+
+    .card--profile {
+        gap: 15px;
+    }
+
+    .profile--image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card--profile p:nth-child(1) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card--profile p:nth-child(2) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .card--text p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .footer {
+        display: none;
+        position:static;
+        bottom: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px
+    }
 }
