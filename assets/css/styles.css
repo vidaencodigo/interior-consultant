@@ -131,9 +131,11 @@ Menu
     line-height: 22px;
     color: var(--white);
 }
-.main--illustration{
+
+.main--illustration {
     position: relative;
 }
+
 /*img*/
 .main--img {
     width: 821.11px;
@@ -191,9 +193,22 @@ Menu
 }
 
 .card--text>p {
-    width:287px;
+    width: 287px;
     font-family: 'Lora', serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+}
+
+
+.footer {
+    padding: 1em;
+}
+
+.content--footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
 }
