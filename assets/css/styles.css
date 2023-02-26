@@ -53,13 +53,9 @@ body {
     visibility: hidden;
 }
 
-.active {
-    border-bottom: solid 2px var(--white--base);
-    font-weight: 700;
-    padding-bottom: 8px;
-}
 
 .link--menu {
+
     color: var(--white--base);
     font-weight: 500;
     font-size: 18px;
@@ -96,7 +92,22 @@ body {
     cursor: pointer;
 }
 
+.list--item {
+    position: relative;
+}
 
+.active {
+    font-weight: 700;
+}
+
+.active::before {
+    display: inline;
+    position: absolute;
+    content: " ";
+    border: 2px solid #FFFFFF;
+    width: 55px;
+    bottom: -8px;
+}
 
 
 
@@ -135,6 +146,9 @@ body {
 }
 
 .interior--information a {
+    display: flex;
+    align-items: center;
+    gap:10px;
     color: var(--white--base);
     font-weight: 700;
     font-size: 14px;
@@ -198,6 +212,7 @@ body {
 }
 
 footer {
+    width: 100%;
     padding: 1em;
     text-align: center;
     position: static;
@@ -205,5 +220,73 @@ footer {
     font-size: 14px;
     line-height: 17px;
     color: var(--gray--base);
+
+}
+
+.link--f {
+    color: var(--gray--base);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+    .icono--menu--plegable {
+        display: none;
+    }
+
+    .menu {
+        padding: 42px 77px 0px 77px;
+    }
+
+    .menu--desplegable {
+        position: relative;
+        overflow: visible;
+        flex-direction: row;
+        top: 0;
+        right: 0;
+    }
+
+    .brand--menu {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .main {
+        flex-direction: row;
+        padding-right: 77px;
+        padding-left: 77px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .interior--information h1 {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 61px;
+    }
+
+    .interior--information p {
+        width: 410px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .interior--information a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .img {
+        min-width: 100%;
+        max-width: 821px;
+        min-height: auto;
+        max-height: 586px;
+    }
+
+    .card {
+        width: 410px;
+        right: 32px;
+    }
 
 }

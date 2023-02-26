@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         .material-symbols-outlined {
-            font-size: 35px;
+            font-size: 35px!important;
             font-variation-settings:
                 'FILL' 0,
                 'wght' 400,
@@ -35,9 +35,8 @@
 
 
             <ul class="menu--desplegable">
-                <li class="list--item active">
-                    <a href="#" class="link--menu">Home</a>
-
+                <li class="list--item">
+                    <a href="#" class="link--menu active">Home</a>
                 </li>
                 <li class="list--item">
                     <a href="#" class="link--menu">About</a>
@@ -58,7 +57,10 @@
                 organizing & eco-services.
             </p>
             <a href="#">
-                Read more
+                Read more 
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
             </a>
         </section>
         <section class="interior--illustarions">
@@ -86,7 +88,8 @@
         </section>
     </main>
     <footer>
-        <p>created by Emmanuel Lucio Urbina - devChallenges.io</p>
+        <p>created by <a href="https://devchallenges.io/portfolio/vidaencodigo" class="link--f"
+                title="link to devChallenges profile">Emmanuel Lucio Urbina</a> - devChallenges.io</p>
     </footer>
     <script>
         let icono = document.querySelector(".icono--menu--plegable");
