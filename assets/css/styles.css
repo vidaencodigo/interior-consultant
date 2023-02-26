@@ -53,13 +53,9 @@ body {
     visibility: hidden;
 }
 
-.active {
-    border-bottom: solid 2px var(--white--base);
-    font-weight: 700;
-    padding-bottom: 8px;
-}
 
 .link--menu {
+    
     color: var(--white--base);
     font-weight: 500;
     font-size: 18px;
@@ -95,8 +91,22 @@ body {
 .icono--menu--plegable {
     cursor: pointer;
 }
+.list--item {
+    position: relative;
+}
 
+.active {
+    font-weight: 700;
+}
 
+.active::before {
+    display: inline;
+    position: absolute;
+    content: " ";
+    border: 2px solid #FFFFFF;
+    width: 55px;
+    bottom: -8px;
+}
 
 
 

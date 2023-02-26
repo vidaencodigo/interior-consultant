@@ -18,6 +18,35 @@
                 'GRAD' 0,
                 'opsz' 48
         }
+
+        @media screen and (min-width: 900px) {
+            .icono--menu--plegable {
+                display: none;
+            }
+
+            .menu {
+                padding: 42px 77px 0px 77px;
+            }
+            .menu--desplegable {
+                position: relative;
+                overflow: visible;
+                flex-direction: row;
+                top: 0;
+                right: 0;
+            }
+            .brand--menu {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            .main {
+                padding-right: 77px;
+                padding-left: 77px;
+            }
+            .card {
+                width: 410px;
+            }
+        }
     </style>
 </head>
 
@@ -35,9 +64,8 @@
 
 
             <ul class="menu--desplegable">
-                <li class="list--item active">
-                    <a href="#" class="link--menu">Home</a>
-
+                <li class="list--item">
+                    <a href="#" class="link--menu active">Home</a>
                 </li>
                 <li class="list--item">
                     <a href="#" class="link--menu">About</a>
