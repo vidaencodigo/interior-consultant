@@ -11,41 +11,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         .material-symbols-outlined {
-            font-size: 35px;
+            font-size: 35px!important;
             font-variation-settings:
                 'FILL' 0,
                 'wght' 400,
                 'GRAD' 0,
                 'opsz' 48
-        }
-
-        @media screen and (min-width: 900px) {
-            .icono--menu--plegable {
-                display: none;
-            }
-
-            .menu {
-                padding: 42px 77px 0px 77px;
-            }
-            .menu--desplegable {
-                position: relative;
-                overflow: visible;
-                flex-direction: row;
-                top: 0;
-                right: 0;
-            }
-            .brand--menu {
-                font-size: 14px;
-                line-height: 16px;
-            }
-
-            .main {
-                padding-right: 77px;
-                padding-left: 77px;
-            }
-            .card {
-                width: 410px;
-            }
         }
     </style>
 </head>
@@ -86,7 +57,10 @@
                 organizing & eco-services.
             </p>
             <a href="#">
-                Read more
+                Read more 
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
             </a>
         </section>
         <section class="interior--illustarions">
@@ -114,7 +88,8 @@
         </section>
     </main>
     <footer>
-        <p>created by Emmanuel Lucio Urbina - devChallenges.io</p>
+        <p>created by <a href="https://devchallenges.io/portfolio/vidaencodigo" class="link--f"
+                title="link to devChallenges profile">Emmanuel Lucio Urbina</a> - devChallenges.io</p>
     </footer>
     <script>
         let icono = document.querySelector(".icono--menu--plegable");
